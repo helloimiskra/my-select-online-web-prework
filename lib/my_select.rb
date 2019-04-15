@@ -1,3 +1,9 @@
 def my_select(collection)
- # your code here!
+  i = 0
+  new_array = []
+  while i < array.length
+    new_array.push yield(array[i]) if block_given?
+    i+=1
+  end
+  new_array
 end
